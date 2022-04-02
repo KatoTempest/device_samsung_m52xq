@@ -33,6 +33,6 @@ $(call inherit-product, vendor/omni/config/gsm.mk)
 PRODUCT_DEVICE := m52xq
 PRODUCT_NAME := omni_m52xq
 PRODUCT_BRAND := samsung
-PRODUCT_MODEL := samsung
+PRODUCT_MODEL := SM-M526B
 PRODUCT_MANUFACTURER := samsung
-PRODUCT_RELEASE_NAME := samsung samsung
+PRODUCT_RELEASE_NAME := M52
