@@ -17,4 +17,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-     $(LOCAL_DIR)/omni_m52xq.mk
+     $(LOCAL_DIR)/twrp_m52xq.mk
