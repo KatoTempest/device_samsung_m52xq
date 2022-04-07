@@ -16,5 +16,5 @@
 # limitations under the License.
 #
 
-add_lunch_combo omni_m52xq-userdebug
-add_lunch_combo omni_m52xq-eng
+add_lunch_combo twrp_m52xq-userdebug
+add_lunch_combo twrp_m52xq-eng
