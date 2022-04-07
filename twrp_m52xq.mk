@@ -31,7 +31,7 @@ $(call inherit-product, vendor/omni/config/gsm.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := m52xq
-PRODUCT_NAME := omni_m52xq
+PRODUCT_NAME := twrp_m52xq
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-M526B
 PRODUCT_MANUFACTURER := samsung
