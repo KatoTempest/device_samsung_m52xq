@@ -18,3 +18,5 @@
 
 LOCAL_PATH := device/samsung/m52xq
 
+# Copy modules for depmod
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,device/samsung/m52xq/recovery/root,recovery/root)

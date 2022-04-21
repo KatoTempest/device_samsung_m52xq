@@ -16,5 +16,4 @@
 # limitations under the License.
 #
 
-add_lunch_combo twrp_m52xq-userdebug
-add_lunch_combo twrp_m52xq-eng
+COMMON_LUNCH_CHOICES := twrp_m52xq-eng

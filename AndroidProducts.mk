@@ -19,7 +19,4 @@
 PRODUCT_MAKEFILES := \
      $(LOCAL_DIR)/twrp_m52xq.mk
 
-COMMON_LUNCH_CHOICES := \
-    twrp_m52xq-user \
-    twrp_m52xq-userdebug \
-    twrp_m52xq-eng
+COMMON_LUNCH_CHOICES := twrp_m52xq-eng

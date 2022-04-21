@@ -54,7 +54,7 @@ DEXPREOPT_GENERATE_APEX_IMAGE := true
 
 # File systems
 BOARD_HAS_LARGE_FILESYSTEM := true
-#BOARD_RECOVERYIMAGE_PARTITION_SIZE := 81788928 # This is the maximum known partition size, but it can be higher, so we just omit it
+BOARD_RECOVERYIMAGE_PARTITION_SIZE := 81788928 # This is the maximum known partition size, but it can be higher, so we just omit it
 BOARD_SYSTEMIMAGE_PARTITION_TYPE := ext4
 BOARD_USERDATAIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
@@ -81,8 +81,9 @@ BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOTIMG_HEADER_VERSION)
 BOARD_KERNEL_IMAGE_NAME := Image.gz
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
-#TARGET_KERNEL_SOURCE := kernel/samsung/m52xq
-#TARGET_KERNEL_CONFIG := m52xq_defconfig
+TARGET_KERNEL_SOURCE := kernel/samsung/m52xq
+TARGET_KERNEL_CONFIG := m52xq_swa_ins_defconfig
+TW_LOAD_VENDOR_MODULES := "fts5cu56a_m52xq.bin s3908_m52xq.bin"
 
 # Platform
 TARGET_BOARD_PLATFORM := lahaina
@@ -109,6 +110,7 @@ TW_NO_REBOOT_BOOTLOADER := true
 TW_HAS_DOWNLOAD_MODE := true
 TW_INCLUDE_RESETPROP := true
 TW_EXCLUDE_APEX := true
+TARGET_USE_CUSTOM_LUN_FILE_PATH := "/config/usb_gadget/g1/functions/mass_storage.0/lun.%d/file"
 
 # Haptics
 TW_USE_SAMSUNG_HAPTICS := true
